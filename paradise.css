@@ -1,0 +1,457 @@
+
+/* CSS reset*/
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+/* box model fix here */
+/* "*" means: apply to every single element on the page*/
+*{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+
+/* --- BODY --- */
+body{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+    background-image: url(images/background.gif);
+    background-repeat: repeat-x;
+    font-size: 16px;
+    
+}
+
+/* --- BODY: Shadow Property for h1 in the Body --- */
+body h1{
+    text-shadow:  3px 1.5px 1.5px #d3d3d3;
+}
+
+
+/* --- WRAPPER --- */
+div#wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    box-shadow: 0 0 20px #FF5A00;
+}
+
+
+
+/* --- HEADER --- */
+header{ 
+    background-color: white;
+    background-image: url(images/logo.png);
+    background-repeat:no-repeat;
+    background-size: 70px;
+    background-position: 1.5% 0.5rem;
+    
+    font-family: 'Lora', serif;
+    letter-spacing: 10px;
+}
+
+header h1{
+    color: #FF5A00;
+    font-weight: 400;
+    padding: 1.5rem 0 0 2.5%;
+    margin-left: 65px;
+    font-size: 2rem;
+    letter-spacing: .5px;
+    text-shadow: none;
+}
+
+
+header h2{
+    color: #321eff;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2.5%;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2.1px;
+}
+
+
+/* --- NAVIGATION --- */
+
+
+/* Phone Navigation*/
+@media only screen and (max-width:600px) {
+    nav {
+        background-color: #FF5A00;
+        padding: .5rem 2%;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    
+    nav ul.navbar{
+         list-style-type: none;
+        padding: 0; 
+        
+        
+    }
+    
+    nav ul.navbar li a {
+    padding: .2rem 1rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    font-weight: 800;
+    text-decoration: none;
+    display:block;
+    border: solid 1px white;
+    border-radius: .5rem;
+    color: #321eff;
+    
+    }
+    
+    nav ul.navbar li a:hover {
+        background-color: #321eff;
+        color: #FFA30F;
+    }
+    nav ul.navbar li.active a {
+        background-color: #FFA30F;
+        color: white;
+    }
+    
+    
+    
+    
+    
+    
+}/*end phone*/
+
+
+/* Desktop Navigation*/
+@media only screen and (min-width:601px) {
+    nav {
+    background-color: #FFA30F;
+    background: linear-gradient(to bottom,#FFA30F 0%, red 100%);
+    border-top: solid 1px #FFA30F;
+    border-bottom: solid 1px #FFA30F;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+nav ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---NAVIGATION BAR PROPERTIES*/
+nav ul.navbar li {
+    float: left; 
+    list-style-type:none;
+    
+}
+
+nav ul.navbar li a {
+    display: block;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    border-right: solid 1px #fff;
+    
+}
+
+nav ul.navbar li a:hover{
+    background-color: #FFA30F;
+    color:#321eff;
+    font-weight: 800;
+}
+
+nav ul.navbar li.active a{
+    background-color: white;
+    color:#FF5A00;
+    font-weight: 800;
+}
+
+    
+}/*end desktop*/
+
+
+/* --- Division for Navigation Bar ---*/
+.keepOpen {
+    clear: both;
+}
+
+
+/**/
+/* --- MAIN --- */
+main{
+    padding: .8rem 2.5%;
+    background-color: #fff;
+    
+}
+
+main h1{
+    font-size: 2rem;
+    color: #FF5A00;
+    border-bottom: 3px solid #FF5A00;
+    margin-bottom: 1rem;
+}
+
+main h2{
+    font-size: 1.5rem;
+    color: #FFA30F;
+    margin-top: .5rem;
+    margin-bottom: .2rem;
+}
+
+main h3{
+    font-size: 1.2rem;
+    color: #321eff ;
+    margin-bottom: .2rem;
+}
+
+main p {
+    padding-bottom: .8rem;
+    line-height: 150%;
+}
+
+main blockquote {
+    font-style: italic;
+    margin: 1rem 10%;
+    font-size: .9rem;
+}
+
+main a{
+    color: #ff0d5e;
+}
+
+main a:hover{
+    color: #321eff;
+}
+
+
+/* --- LISTS --- */
+
+/* ---description listed PROPERTIES --- */
+main ul.description {
+    margin: 0 0 .8rem 0;
+    padding: 0 0 0 2rem;
+    
+}
+
+
+
+
+/* --- Description properties ---*/
+main ul.description {
+     list-style-image: url(images/ListBullets/check.png);
+}
+
+/* --- Description term PROPERTIES --- */
+main dl dt{
+    margin: 0;
+    font-weight: 800;
+    padding: 0 0 0 1rem;
+    letter-spacing: 1.5px
+}
+
+/* --- Description definition properties --- */
+main dl dd{
+    margin: 0; 
+    padding: 0 0 .75rem 3rem;
+    
+}
+
+
+
+
+
+/* --- My Video ---*/
+
+iframe.myvideo{
+    width:98%;
+    margin-left: 1%;
+    height:320px;
+    margin-bottom:1rem;
+}
+
+
+
+/* --- STYLING IMAGES  ---*/
+
+/* --- Logo properties ---*/
+figure.myLogo {
+    margin: 0 0 .5em 2%;
+    padding: .5em;
+    float: left;
+    width: 150px;
+}
+
+figure.myLogo img {
+    width: 100%;
+}
+
+
+/* --- Photo properties ---*/
+
+figure.homePhoto {
+    
+    margin: 0 .5% 1em 2%;
+    padding: 0em;
+    float: right;
+     width:40%;
+    
+   
+}
+figure.homePhoto img {
+    width: 100%;   
+}
+
+
+figure.homePhoto {
+    font-size: .9em;
+}
+
+figure.myPhoto {
+    margin: 0 6% 1em 2%;
+    padding: 0em;
+    float: left;
+    width:50%;
+    
+}
+
+figure.myPhoto figcaption {
+    font-size: .9em;
+}
+
+
+figure.myPhoto img {
+    width: 100%;   
+}
+
+
+/* --- package Photo properties ---*/
+figure.myPhotoAlt {
+    margin: 0 5% 1em 15%;
+    padding: .5em;
+    float: left;
+    width: 65%;
+}
+
+figure.myPhotoAlt figcaption {
+    font-size: .9em;
+}
+
+figure.myPhotoAlt figcaption span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #321eff;
+
+}
+
+figure.myPhotoAlt img {
+    width: 100%;   
+}
+
+
+/* --- Thumbnail properties ---*/
+figure.thumbnail {
+    float: left;
+    padding-top: 1.5px;
+    border: 1px solid #FFA30F;
+    text-align: center;
+    height: 390px;
+    width: 300px;
+    margin:1rem;
+}
+
+figure.thumbnail figcaption {
+    font-size: .8em;
+}
+
+figure.thumbnail img {
+    width: 100%;   
+}
+
+figure.thumbnail figcaption span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5em;
+     color: #321eff;
+}
+
+
+/* --- FORM STYLING --- */
+
+form.updates fieldset {
+    margin-bottom:2rem;
+    border-radius: .5rem;
+    font-size: .8rem;
+    color: #321eff;
+    
+}
+
+form.updates legend {
+    font-weight:800;
+    margin-left: 1rem;
+   
+}
+
+form.updates span{
+    display: block;
+    padding: .8rem 0 0 .3rem;
+    color: #FF5A00;
+
+    
+}
+
+form.updates .userinfo {
+   
+    width: 20rem;
+    border-radius:.6rem;
+    border: solid 1px #321eff;
+    padding: .4rem;
+    background: white;
+    
+}
+
+form.updates .usercomments {
+   
+    width: 20rem;
+    border-radius:.2rem;
+    border: solid 1px #321eff;
+    padding: .4rem;
+    background: white;
+    
+}
+
+
+form.updates .userbutton {
+    
+    width: 20rem;
+    padding: .8rem;
+    margin-left: 2%;
+    background: #6814ff;
+    color: white;
+    font-weight:800;
+    font-size: 1rem;
+    letter-spacing: 2.5px;
+    border: solid 1px;
+    border-radius:.6rem;
+}
+
+
+
+
+/* --- FOOTER --- */
+footer {
+    background-color: rgb(255, 90, 0);  
+}
+
+footer p {
+    text-align: center;
+    color: rgb(255,255,255);
+    padding: .5rem;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
